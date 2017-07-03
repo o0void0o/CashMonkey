@@ -1,0 +1,81 @@
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    android:elevation="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Due this month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text3Viuew4"
+                android:textSize="12sp"
+                android:gravity="top|left" />
+            <TextView
+                android:text="Arrears"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text3View4"
+                android:textSize="12sp"
+                android:gravity="top|left" />
+            <TextView
+                android:text="Total"
+                android:layout_width="match_parent"
+                android:id="@+id/textView4"
+                android:textSize="12sp"
+                android:gravity="top|left"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="R2800"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/texut3View4"
+                android:textColor="@color/expense_Red_Desaturaed"
+                android:textSize="12sp"
+                android:gravity="top|right" />
+            <TextView
+                android:text="R0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/texut3uView4"
+                android:textColor="@color/expense_Red_Desaturaed"
+                android:textSize="12sp"
+                android:gravity="top|right" />
+            <TextView
+                android:text="R2800"
+                android:layout_width="match_parent"
+                android:id="@+id/textVuiew4"
+                android:textSize="12sp"
+                android:gravity="top|right"
+                android:textColor="@color/expense_Red_Desaturaed"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

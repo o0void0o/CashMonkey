@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/calculator_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/keyboardView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="5.0" android:layout_weight="1.0">
+            <Button android:gravity="center" android:id="@+id/button17" android:background="@drawable/button_calculator_orange" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="C" android:layout_weight="1.0" android:contentDescription="@string/app_name" style="@style/ButtonCalculatorNumber" />
+            <Button android:id="@+id/button7" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="7" android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+            <Button android:id="@+id/button4" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="4" android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+            <Button android:id="@+id/button1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="1" android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+            <Button android:id="@+id/button14" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="0" android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="5.0" android:layout_weight="1.0">
+            <ImageButton android:id="@+id/button10" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:src="@drawable/ic_divide" android:layout_weight="1.0" android:contentDescription="@string/app_name" style="@style/ButtonOperator" />
+            <Button android:id="@+id/button8" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="8" android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+            <Button android:id="@+id/button5" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="5" android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+            <Button android:id="@+id/button2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="2" android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+            <Button android:id="@+id/button21" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="000" android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="5.0" android:layout_weight="1.0">
+            <ImageButton android:id="@+id/button11" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:src="@drawable/ic_clear_black_48dp" android:layout_weight="1.0" android:contentDescription="@string/app_name" style="@style/ButtonOperator" />
+            <Button android:id="@+id/button9" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="9" android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+            <Button android:id="@+id/button6" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="6" android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+            <Button android:id="@+id/button3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="3" android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+            <Button android:id="@+id/button15" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:text="." android:layout_weight="1.0" style="@style/ButtonCalculatorNumber" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="5.0" android:layout_weight="1.0">
+            <ImageButton android:id="@+id/button16" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:src="@drawable/ic_backspace_black_48dp" android:layout_weight="1.0" android:contentDescription="@string/app_name" style="@style/ButtonOperator" />
+            <ImageButton android:id="@+id/button12" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:src="@drawable/ic_remove_black_48dp" android:layout_weight="1.0" android:contentDescription="@string/app_name" style="@style/ButtonOperator" />
+            <ImageButton android:id="@+id/button13" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:src="@drawable/ic_add_black_48dp" android:layout_weight="1.0" android:contentDescription="@string/app_name" style="@style/ButtonOperator" />
+            <ImageButton android:id="@+id/button19" android:background="@drawable/button_calculator_orange" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/button_spacing" android:src="@drawable/ic_equal_2" android:layout_weight="2.0" android:contentDescription="@string/app_name" style="@style/ButtonOperator" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

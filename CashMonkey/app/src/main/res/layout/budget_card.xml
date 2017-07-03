@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="12dp"
+
+    android:id="@+id/bill_card"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/uyg">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        app:srcCompat="@drawable/ic_cal"
+                        android:id="@+id/budget_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="@dimen/list_item_avatar_size"
+
+                        android:layout_gravity="center_vertical|center_horizontal|center"
+                        android:layout_marginRight="10dp" />
+
+                    <TextView
+                        android:text="WoolWorths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/budget_name"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="viewStart"
+                        android:layout_gravity="center_vertical" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/kkk"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:text="R 16000.00"
+                            android:layout_weight="1"
+                            android:textColor="@color/income_Green_Desaturaed"
+                            android:textStyle="normal|bold"
+                            android:textSize="15sp"
+
+                            android:elevation="1dp"
+                            android:gravity="right|center_vertical" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:id="@+id/budgetLLhook"></LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

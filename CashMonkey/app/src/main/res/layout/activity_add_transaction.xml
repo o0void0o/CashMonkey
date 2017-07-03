@@ -1,0 +1,256 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/poepkoos"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="125dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <TextView
+            android:text="R 0.00"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/amount"
+
+            android:gravity="top"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:layout_marginLeft="16dp" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/poepkoos"
+        app:layout_anchorGravity="bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_menu_camera"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/row"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/row"
+                    android:id="@+id/budgetStartPeriodLL">
+
+                    <ImageView
+
+                        app:srcCompat="@drawable/ic_cal"
+                        android:id="@+id/imageView2"
+                        android:layout_width="@dimen/list_item_avatar_size"
+                        android:layout_height="@dimen/list_item_avatar_size"
+
+                        android:layout_marginRight="16dp"/>
+                    <TextView
+                        android:id="@+id/tranDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:text="@string/today"
+                        android:gravity="fill_vertical"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/row"
+                    android:id="@+id/ll_wallet">
+
+                    <ImageView
+
+                        app:srcCompat="@drawable/ic_income_teal_card_gold"
+                        android:id="@+id/add_transaction_wallet_icon"
+                        android:layout_width="@dimen/list_item_avatar_size"
+                        android:layout_height="@dimen/list_item_avatar_size"
+
+                        android:layout_marginRight="16dp"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:text="Weekly View"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:foregroundGravity="center"
+
+                            android:id="@+id/add_transaction_wallet"
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            />
+
+                        <TextView
+                            android:text="R 5900.00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/titleWalletBalance"
+
+                            android:textAppearance="?attr/textAppearanceListItem"
+                            android:textSize="12sp"
+                            android:textColor="@color/income_Green_Desaturaed" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/row"
+                    android:id="@+id/ll_cat"
+                    android:clickable="true">
+
+                    <ImageView
+
+                        app:srcCompat="@drawable/emptycat"
+                        android:id="@+id/add_transaction_cat_icon"
+                        android:layout_width="@dimen/list_item_avatar_size"
+                        android:layout_height="@dimen/list_item_avatar_size"
+
+                        android:layout_marginRight="16dp" />
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/add_transaction_cat_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/add_transaction_desc"
+                        android:layout_weight="1"
+                        android:hint="Description" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:srcCompat="@drawable/slip"
+                                android:id="@+id/imageView10"
+                                android:layout_marginLeft="16dp" />
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:srcCompat="@drawable/slip"
+                                android:id="@+id/imageView9"
+                                android:layout_marginLeft="10dp" />
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:srcCompat="@drawable/slip"
+                                android:id="@+id/imageView11"
+                                android:layout_marginLeft="10dp" />
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:srcCompat="@drawable/slip"
+                                android:id="@+id/imageView12"
+                                android:layout_marginLeft="10dp" />
+                        </GridLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

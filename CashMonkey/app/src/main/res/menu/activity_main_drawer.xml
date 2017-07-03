@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_transactions"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Transactions" />
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="DashBoard" />
+        <item
+            android:id="@+id/nav_budget"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Budgets" />
+        <item
+            android:id="@+id/nav_bills"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Bills" />
+        <item
+            android:id="@+id/nav_wallets"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Wallets" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Categories" />
+        <item
+            android:id="@+id/nav_transfer"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Budget Transfer"></item></group>
+
+    <item android:title="Customisation">
+        <menu>
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>

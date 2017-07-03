@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/row"
+    android:paddingLeft="8.0dip"
+    android:paddingRight="8.0dip"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:id="@+id/poep"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/overview_card_item_expense_icon"
+        android:layout_width="@dimen/list_item_avatar_size"
+        android:layout_height="@dimen/list_item_avatar_size"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ic_category_family" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Shopping"
+                android:textAppearance="?textAppearanceListItem"
+                android:id="@+id/overview_card_item_expense_category_name" />
+
+            <TextView
+                android:id="@+id/expense_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="R467.99"
+                android:textColor="@color/expense_Red_Desaturaed"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/transaction_card_desc"
+                android:textColor="?attr/colorControlNormal"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

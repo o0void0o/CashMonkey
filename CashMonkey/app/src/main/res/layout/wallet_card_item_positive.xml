@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:clickable="true"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+
+    <ImageView
+
+        android:id="@+id/wallet_card_item_income_icon"
+        android:layout_width="40dp"
+        android:layout_height="@dimen/list_item_avatar_size"
+        android:layout_gravity="left"
+
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/ic_category_family" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/wallet_card_item_income_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/wallet_card_item_income_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="R1477767.99"
+            android:textColor="@color/income_Green_Desaturaed" />
+    </LinearLayout>
+
+</LinearLayout>

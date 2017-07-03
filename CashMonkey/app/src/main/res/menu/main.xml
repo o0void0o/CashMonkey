@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Select Time Period"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_setti1ngs"
+        android:orderInCategory="100"
+        android:title="View By Catagory"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settin2gs"
+        android:orderInCategory="100"
+        android:title="Transfer funds"
+        app:showAsAction="never" />
+</menu>

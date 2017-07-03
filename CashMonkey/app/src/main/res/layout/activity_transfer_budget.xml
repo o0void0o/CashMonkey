@@ -1,0 +1,291 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin"
+                android:elevation="12dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp"
+
+                        android:background="@drawable/row"
+                        android:id="@+id/ll_amount"
+                        android:clickable="true"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+
+
+                            android:layout_marginRight="16dp"
+                            android:background="@color/cardview_light_background">
+
+                            <ImageView
+                                android:id="@+id/imageView7"
+                                android:layout_width="match_parent"
+                                app:srcCompat="@drawable/emptycir2"
+                                android:adjustViewBounds="true"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerInParent="true" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+
+                                android:orientation="vertical">
+
+
+
+                                <TextView
+                                    android:id="@+id/uuuuu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="R"
+                                    android:textColor="@android:color/black" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:text="234.00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/amount"
+
+                            android:gravity="fill_vertical"
+                            android:textColor="@color/income_Green_Desaturaed"
+                            android:textStyle="bold"
+                            android:textSize="36sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/row"
+                        android:id="@+id/ll_cat"
+                        android:clickable="true">
+
+                        <ImageView
+
+                            app:srcCompat="@drawable/icon_114"
+                            android:id="@+id/add_transaction_cat_icon"
+                            android:layout_width="@dimen/list_item_avatar_size"
+                            android:layout_height="@dimen/list_item_avatar_size"
+
+                            android:layout_marginRight="16dp" />
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/add_transaction_cat_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                xmlns:tools="http://schemas.android.com/tools"
+                                android:id="@+id/main_ciontent"
+
+                                android:fitsSystemWindows="true"
+
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:text="Some Budget"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:foregroundGravity="center"
+
+                                    android:id="@+id/caitpoep"
+                                    android:textAppearance="?attr/textAppearanceListItem"
+                                    android:layout_weight="1" />
+
+                                <ProgressBar
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/progreissBar3"
+                                    android:max="100"
+                                    android:progress="30"
+                                    style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+                                <TextView
+                                    android:text="R780"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/teixtView3"
+                                    android:gravity="left|center" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+
+                    android:gravity="center_vertical"
+                    android:background="@drawable/row"
+                    android:id="@+id/lsdl_cat"
+                    android:clickable="true">
+
+                    <TextView
+                        android:text="TO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/row"
+                        android:id="@+id/ll_dcat"
+                        android:clickable="true">
+
+                        <ImageView
+
+                            app:srcCompat="@drawable/icon_2"
+                            android:id="@+id/add_transactdion_cat_icon"
+                            android:layout_width="@dimen/list_item_avatar_size"
+                            android:layout_height="@dimen/list_item_avatar_size"
+
+                            android:layout_marginRight="16dp" />
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/add_tdransaction_cat_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                xmlns:tools="http://schemas.android.com/tools"
+                                android:id="@+id/maini_content"
+
+                                android:fitsSystemWindows="true"
+
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:text="Some Other Budget"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:foregroundGravity="center"
+
+                                    android:id="@+id/catpoep"
+                                    android:textAppearance="?attr/textAppearanceListItem"
+                                    android:layout_weight="1" />
+
+                                <ProgressBar
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/progressBar3"
+                                    android:max="100"
+                                    android:progress="90"
+                                    style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+                                <TextView
+                                    android:text="R480"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView3"
+                                    android:gravity="left|center" />
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

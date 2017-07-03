@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingLeft="8.0dip"
+    android:paddingRight="8.0dip"
+    android:paddingTop="8.0dip"
+    android:paddingBottom="1dp">
+
+    <ImageView
+android:id="@+id/overview_card_item_expense_icon"
+        android:layout_width="@dimen/list_item_avatar_size"
+        android:layout_height="@dimen/list_item_avatar_size"
+        android:layout_gravity="left|center_vertical"
+        app:srcCompat="@drawable/ic_category_family"
+        android:layout_marginRight="5dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Shopping"
+                android:textAppearance="?textAppearanceListItem"
+                android:id="@+id/overview_card_item_expense_category_name" />
+
+            <ImageView
+
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/expense_amount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="R467.99"
+                android:textColor="@color/expense_Red_Desaturaed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="Discription about the a b c d that need to be transac..."
+                android:maxLines="1"
+                android:id="@+id/transaction_card_desc" />
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
